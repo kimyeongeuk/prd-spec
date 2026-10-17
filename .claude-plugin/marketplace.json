@@ -1,0 +1,17 @@
+{
+  "name": "prd-spec",
+  "owner": {
+    "name": "kimyeongeuk",
+    "url": "https://github.com/kimyeongeuk"
+  },
+  "description": "PRD·기능명세서 작성과 갱신 스킬 마켓플레이스",
+  "plugins": [
+    {
+      "name": "prd-spec",
+      "source": "./",
+      "description": "결정 인터뷰로 PRD와 기능명세서를 쓰고 두 문서의 일치를 점검한다. 회신·결정 변경이 오면 갱신한다.",
+      "category": "productivity",
+      "keywords": ["prd", "spec", "requirements", "기능명세서", "요구사항"]
+    }
+  ]
+}

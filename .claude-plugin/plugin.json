@@ -1,0 +1,13 @@
+{
+  "name": "prd-spec",
+  "version": "0.1.0",
+  "description": "기획서·아이디어 메모·기존 코드에서 출발해 결정 인터뷰를 거쳐 PRD와 기능명세서를 쓰고, 두 문서가 어긋나지 않는지 점검하는 스킬. 값을 지어내지 않고 모르는 값은 미확정(U)으로 남긴다.",
+  "author": {
+    "name": "kimyeongeuk",
+    "url": "https://github.com/kimyeongeuk"
+  },
+  "homepage": "https://github.com/kimyeongeuk/prd-spec",
+  "repository": "https://github.com/kimyeongeuk/prd-spec",
+  "license": "MIT",
+  "keywords": ["prd", "spec", "requirements", "기능명세서", "요구사항", "documentation"]
+}
