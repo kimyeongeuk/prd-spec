@@ -49,10 +49,16 @@ PRD · 기능명세서 · 요구사항 문서를 쓰거나 고치자고 말하�
 docs/기획서.pdf로 개발할 거야. PRD랑 기능명세서 써 줘
 ```
 
-직접 부를 때는 플러그인 이름을 붙입니다.
+직접 부를 때는 모드에 맞는 명령을 씁니다.
+
+| 명령 | 모드 |
+|---|---|
+| `/prd-spec:new [입력 자료]` | A 새로 작성 — 기준 문서가 있어도 처음부터 다시 쓸 때 |
+| `/prd-spec:update [회신 파일 · 바뀐 내용]` | B 갱신 |
+| `/prd-spec:prd-spec` | 문서 상태를 보고 모드를 알아서 고름 |
 
 ```
-/prd-spec:prd-spec docs/기획서.pdf 기준으로 PRD와 기능명세서를 작성해 줘
+/prd-spec:new docs/기획서.pdf
 ```
 
 입력 자료(기획서 PDF · 평가 기준 이미지 · 회의록 · 참고 문서)는 미리 프로젝트의 `docs/`에 넣어 두면 편합니다.
@@ -144,6 +150,8 @@ node <스킬 폴더>/scripts/read-pdf.mjs <PDF 경로> <출력 폴더>
 .claude-plugin/
 ├── plugin.json
 └── marketplace.json
+skills/new/SKILL.md          /prd-spec:new — 모드 A로 prd-spec을 부르는 진입점
+skills/update/SKILL.md       /prd-spec:update — 모드 B로 prd-spec을 부르는 진입점
 skills/prd-spec/
 ├── SKILL.md                 흐름 · 원칙 · 모드 A/B
 ├── references/
